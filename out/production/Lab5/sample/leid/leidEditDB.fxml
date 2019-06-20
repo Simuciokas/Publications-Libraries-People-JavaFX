@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.collections.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.collections.FXCollections?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #4a4a4b;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LeidiniuController">
+   <children>
+      <Pane layoutX="1.0" layoutY="299.0" prefHeight="70.0" prefWidth="600.0" style="-fx-background-color: #48A5EA;">
+         <children>
+            <TextArea fx:id="leidEditOutput" layoutX="114.0" layoutY="5.0" prefHeight="56.0" prefWidth="375.0" text="Output" wrapText="true" />
+         </children>
+      </Pane>
+      <Text fill="#1c91ab" layoutX="108.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Koreguoti leidinį">
+         <font>
+            <Font size="53.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="leidEditType" disable="true" layoutX="22.0" layoutY="91.0" onAction="#handleTypeChange" prefWidth="150.0" visibleRowCount="2">
+         <items>
+            <FXCollections fx:factory="observableArrayList">
+               <String fx:value="Knyga" />
+               <String fx:value="Zurnalas" />
+            </FXCollections>
+         </items>
+         <value>
+            <String fx:value="Knyga" />
+         </value>
+      </ComboBox>
+      <Button fx:id="leidEditSubmit" disable="true" layoutX="275.0" layoutY="240.0" mnemonicParsing="false" onAction="#handleSubmitAction" text="Submit" />
+      <TextField fx:id="leidEditAuthor" disable="true" layoutX="226.0" layoutY="91.0" />
+      <TextField fx:id="leidEditName" disable="true" layoutX="437.0" layoutY="91.0" />
+      <Text fill="#1c91ab" layoutX="86.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type" />
+      <Text fill="#1c91ab" layoutX="283.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Author" />
+      <Text fill="#1c91ab" layoutX="496.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" />
+      <Label layoutX="233.0" layoutY="369.0" text="© Simas Rabeckas iif16/2" />
+      <TextField fx:id="leidEditYear" disable="true" layoutX="22.0" layoutY="175.0" />
+      <Text fill="#1c91ab" layoutX="84.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Year" />
+      <TextField fx:id="leidEditPublisher" disable="true" layoutX="226.0" layoutY="175.0" />
+      <Text fill="#1c91ab" layoutX="277.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Publisher" />
+      <Text fx:id="leidCreateExit" fill="#8d2a2a" layoutX="560.0" layoutY="47.0" onMouseClicked="#handleButtonAction" strokeType="OUTSIDE" strokeWidth="0.0" text="X">
+         <font>
+            <Font size="44.0" />
+         </font>
+      </Text>
+      <TextField fx:id="leidEditPageCount" disable="true" layoutX="437.0" layoutY="175.0" />
+      <Text fill="#1c91ab" layoutX="481.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Page Count" />
+      <Text fill="#1c91ab" layoutX="90.0" layoutY="236.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID" />
+      <TextField fx:id="leidEditID" layoutX="24.0" layoutY="240.0" />
+      <Button fx:id="leidEditUpdate" layoutX="179.0" layoutY="240.0" mnemonicParsing="false" onAction="#handleSubmitAction" text="Update" />
+   </children>
+</AnchorPane>

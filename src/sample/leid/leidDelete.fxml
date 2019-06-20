@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.collections.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.collections.FXCollections?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #4a4a4b;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LeidiniuController">
+   <children>
+      <Pane layoutX="1.0" layoutY="299.0" prefHeight="70.0" prefWidth="600.0" style="-fx-background-color: #48A5EA;">
+         <children>
+            <TextArea fx:id="leidDeleteOutput" layoutX="114.0" layoutY="5.0" prefHeight="56.0" prefWidth="375.0" text="Output" wrapText="true" />
+         </children>
+      </Pane>
+      <Text fill="#1c91ab" layoutX="90.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ištrinti leidinį(-ius)">
+         <font>
+            <Font size="53.0" />
+         </font>
+      </Text>
+      <Button fx:id="leidDeleteSubmit" layoutX="275.0" layoutY="240.0" mnemonicParsing="false" onAction="#handleSubmitAction" text="Submit" />
+      <TextField fx:id="leidDeleteIndex" layoutX="226.0" layoutY="91.0" />
+      <Text fill="#1c91ab" layoutX="277.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Index/ID" />
+      <Label layoutX="233.0" layoutY="369.0" text="© Simas Rabeckas iif16/2" />
+      <Text fx:id="leidCreateExit" fill="#8d2a2a" layoutX="560.0" layoutY="47.0" onMouseClicked="#handleButtonAction" strokeType="OUTSIDE" strokeWidth="0.0" text="X">
+         <font>
+            <Font size="44.0" />
+         </font>
+      </Text>
+      <CheckBox fx:id="leidDeleteCheckBox" layoutX="292.0" layoutY="145.0" mnemonicParsing="false" />
+      <Text fill="#1c91ab" layoutX="277.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="From DB" />
+      <Text fill="#1c91ab" layoutX="275.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Delete all" />
+      <CheckBox fx:id="leidDeleteAllCheckBox" layoutX="292.0" layoutY="200.0" mnemonicParsing="false" onAction="#handleToggleAction" />
+   </children>
+</AnchorPane>
