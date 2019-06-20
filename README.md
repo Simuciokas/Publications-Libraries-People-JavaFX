@@ -17,6 +17,7 @@ Edit DB | Edit a publication by ID | ✔
 
 ## Library controlller
 ![](https://i.imgur.com/j1JTWqM.png)
+
 Function | Description | Database Integration
 ------ | ------ | ------
 Create | Create a library with option to add selected publications | ✘
@@ -29,6 +30,7 @@ Delete | Delete a library by index | ✘
 
 ## Person controlller
 ![](https://i.imgur.com/pkSOvoJ.png)
+
 Function | Description | Database Integration
 ------ | ------ | ------
 Create | Create a person | ✘
