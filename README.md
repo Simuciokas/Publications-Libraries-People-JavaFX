@@ -3,6 +3,13 @@ This project was done during the span of multiple laboratory works of Java devel
 
 ## Publication controller
 ![](https://i.imgur.com/YEWTst7.png)
+
+First Header | Second Header
+------------ | -------------
+Content from cell 1 | Content from cell 2
+Content in the first column | Content in the second column
+
+
 Function | Description | Database Integration
 ------ | ------ | ------
 Create | Create a publication | ✔
